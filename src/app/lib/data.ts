@@ -121,6 +121,11 @@ export type Certification = {
 
 export const certificationsData: Certification[] = [
   {
+    title: 'Building and Deploying on AWS with S3',
+    issuer: 'NxtWave & CCBP 4.0 Academy',
+    year: '2024',
+  },
+  {
     title: 'Google Certified Professional Cloud Architect',
     issuer: 'Google Cloud',
     year: '2023',
