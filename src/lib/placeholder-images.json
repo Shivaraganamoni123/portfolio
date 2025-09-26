@@ -31,6 +31,12 @@
       "imageHint": "futuristic ui"
     },
     {
+      "id": "project-5",
+      "description": "Abstract representation of project 5",
+      "imageUrl": "https://images.unsplash.com/photo-1745270917331-787c80129680?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwZm9yZWNhc3R8ZW58MHx8fHwxNzU4ODc1NTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance forecast"
+    },
+    {
       "id": "project-detail-1",
       "description": "Detailed view of project 1",
       "imageUrl": "https://images.unsplash.com/photo-1720962158858-5fb16991d2b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW50ZXJmYWNlfGVufDB8fHx8MTc1ODg2NTk1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -53,6 +59,12 @@
       "description": "Detailed view of project 4",
       "imageUrl": "https://images.unsplash.com/photo-1587355760421-b9de3226a046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1c2VyJTIwZXhwZXJpZW5jZXxlbnwwfHx8fDE3NTg4NjU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "user experience"
+    },
+    {
+      "id": "project-detail-5",
+      "description": "Detailed view of project 5",
+      "imageUrl": "https://images.unsplash.com/photo-1748439281934-2803c6a3ee36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzU4ODc1NTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "budget dashboard"
     },
     {
       "id": "certificate-1",
