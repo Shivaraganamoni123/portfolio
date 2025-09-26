@@ -7,7 +7,7 @@ const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export const profileData = {
   name: 'R. Shiva Shankar',
-  tagline: 'Creative Developer & UI/UX Designer',
+  tagline: 'Full stack | AI/ML intern @Infosys Springboard |Knows Python, Front End Development | Completed Hands-on Projects | AI/ML',
   bio: `Hey Guys !!! Myself R.Shiva Shankar a 4th year ECE student at SICET-TS, specializing in MERN Fullstack. Envisioning to combine AI/ML, and AI to build smart and secure tech solutions. Learning, Building Projects, and Exploring new ideas. Open for any Opportunities and Collaborations for a combined greater good in future.`,
   email: 'raganamonishivashankar78@gmail.com',
   socials: {
