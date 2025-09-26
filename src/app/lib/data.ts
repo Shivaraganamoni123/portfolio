@@ -1,5 +1,5 @@
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Code, Server, PencilRuler, Bot } from "lucide-react";
 import { DiscordIcon, LeetCodeIcon } from "@/components/icons";
 
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
@@ -144,3 +144,26 @@ export const certificationsData: Certification[] = [
     url: '#',
   },
 ];
+
+export const skillsData = [
+    {
+        category: 'Frontend',
+        icon: Code,
+        skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
+    },
+    {
+        category: 'Backend',
+        icon: Server,
+        skills: ['Node.js', 'Python', 'Firebase', 'PostgreSQL', 'Docker'],
+    },
+    {
+        category: 'UI/UX Design',
+        icon: PencilRuler,
+        skills: ['Figma', 'Adobe XD', 'User Research', 'Wireframing', 'Prototyping'],
+    },
+    {
+        category: 'AI/ML',
+        icon: Bot,
+        skills: ['Genkit', 'TensorFlow', 'PyTorch', 'LangChain', 'LLMs'],
+    }
+] as const;
