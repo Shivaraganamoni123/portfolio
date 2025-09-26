@@ -53,6 +53,36 @@
       "description": "Detailed view of project 4",
       "imageUrl": "https://images.unsplash.com/photo-1587355760421-b9de3226a046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1c2VyJTIwZXhwZXJpZW5jZXxlbnwwfHx8fDE3NTg4NjU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "user experience"
+    },
+    {
+      "id": "certificate-1",
+      "description": "Certificate image 1",
+      "imageUrl": "https://res.cloudinary.com/dtitgjfbk/image/upload/v1758874560/Screenshot_2025-09-26_011131_mqlveb.png",
+      "imageHint": "certificate"
+    },
+    {
+      "id": "certificate-2",
+      "description": "Certificate image 2",
+      "imageUrl": "https://res.cloudinary.com/dtitgjfbk/image/upload/v1758874545/Screenshot_2025-09-26_011155_ye8dyl.png",
+      "imageHint": "certificate"
+    },
+    {
+      "id": "certificate-3",
+      "description": "Certificate image 3",
+      "imageUrl": "https://res.cloudinary.com/dtitgjfbk/image/upload/v1758874527/Screenshot_2025-09-26_011231_b4ebuc.png",
+      "imageHint": "certificate"
+    },
+    {
+      "id": "certificate-4",
+      "description": "Certificate image 4",
+      "imageUrl": "https://res.cloudinary.com/dtitgjfbk/image/upload/v1758874510/Screenshot_2025-09-26_011250_nlys2j.png",
+      "imageHint": "certificate"
+    },
+    {
+      "id": "certificate-5",
+      "description": "Certificate image 5",
+      "imageUrl": "https://res.cloudinary.com/dtitgjfbk/image/upload/v1758874497/Screenshot_2025-09-26_011309_jgdput.png",
+      "imageHint": "certificate"
     }
   ]
 }

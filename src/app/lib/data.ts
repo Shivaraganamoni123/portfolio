@@ -121,7 +121,38 @@ export type Certification = {
   image?: ReturnType<typeof findImage>;
 };
 
-export const certificationsData: Certification[] = [];
+export const certificationsData: Certification[] = [
+  {
+    title: 'Certificate of Completion',
+    issuer: 'NxtWave',
+    year: '2024',
+    image: findImage('certificate-1'),
+  },
+  {
+    title: 'Certificate of Completion',
+    issuer: 'NxtWave',
+    year: '2024',
+    image: findImage('certificate-2'),
+  },
+  {
+    title: 'Certificate of Completion',
+    issuer: 'NxtWave',
+    year: '2024',
+    image: findImage('certificate-3'),
+  },
+  {
+    title: 'Certificate of Completion',
+    issuer: 'NxtWave',
+    year: '2024',
+    image: findImage('certificate-4'),
+  },
+  {
+    title: 'Certificate of Completion',
+    issuer: 'NxtWave',
+    year: '2024',
+    image: findImage('certificate-5'),
+  },
+];
 
 export const skillsData = [
     {
