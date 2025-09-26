@@ -54,3 +54,19 @@ export async function getAIGeneratedDescription(
     return { success: false, error: 'Failed to generate description.' };
   }
 }
+
+export async function getComments() {
+    // In a real app, this would fetch from a database
+    return [
+        { name: 'Shiva Shankar', message: 'First comment!', avatarUrl: 'https://i.pravatar.cc/40?u=a042581f4e29026704d' },
+        { name: 'Alex Doe', message: 'This is a great portfolio.', avatarUrl: 'https://i.pravatar.cc/40?u=a042581f4e29026704e' },
+    ]
+}
+
+export async function postComment(formData: FormData) {
+    const name = formData.get('name') as string;
+    const message = formData.get('message') as string;
+
+    // In a real app, this would save to a database
+    console.log('New comment:', { name, message });
+}
