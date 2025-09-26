@@ -10,9 +10,20 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const CardLink = ({ children }: { children: React.ReactNode }) => {
+    if (project.liveUrl) {
+      return (
+        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
+    return <Link href={`/projects/${project.id}`}>{children}</Link>;
+  };
+
   return (
     <Card className="glass-card overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_hsl(var(--primary)/0.7)] hover:border-primary">
-      <Link href={`/projects/${project.id}`}>
+      <CardLink>
         <div className="relative aspect-video">
           {project.image && (
             <Image
@@ -35,11 +46,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
           <div className="flex items-center gap-2 text-sm text-primary font-medium pt-2">
-            View Details
+            {project.liveUrl ? 'View Live Demo' : 'View Details'}
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </div>
         </CardContent>
-      </Link>
+      </CardLink>
     </Card>
   );
 }
