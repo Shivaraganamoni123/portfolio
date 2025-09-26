@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Award, Link as LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 export function CertificationsSection() {
   return (
@@ -16,27 +17,34 @@ export function CertificationsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certificationsData.map((cert) => (
-            <Card key={cert.title} className="glass-card flex flex-col">
-              <CardHeader className="flex-row items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-full">
-                  <Award className="h-8 w-8 text-primary" />
-                </div>
-                <div className="flex-1">
+            <Card key={cert.title} className="glass-card flex flex-col overflow-hidden">
+              {cert.image && (
+                 <div className="relative aspect-video w-full overflow-hidden">
+                    <Image 
+                      src={cert.image.imageUrl}
+                      alt={cert.image.description}
+                      data-ai-hint={cert.image.imageHint}
+                      fill
+                      className="object-contain"
+                    />
+                 </div>
+              )}
+              <div className="p-6 flex flex-col flex-grow">
                   <CardTitle className="text-xl">{cert.title}</CardTitle>
                   <CardDescription className="text-muted-foreground">
                     {cert.issuer} &bull; {cert.year}
                   </CardDescription>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-grow flex items-end justify-end">
-                {cert.url && (
-                  <Button asChild variant="link">
-                    <Link href={cert.url} target="_blank" rel="noopener noreferrer">
-                      View Credential <LinkIcon className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                )}
-              </CardContent>
+
+                  <div className="flex-grow flex items-end justify-end mt-4">
+                    {cert.url && (
+                      <Button asChild variant="link">
+                        <Link href={cert.url} target="_blank" rel="noopener noreferrer">
+                          View Credential <LinkIcon className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+              </div>
             </Card>
           ))}
         </div>

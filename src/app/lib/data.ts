@@ -117,9 +117,17 @@ export type Certification = {
   issuer: string;
   year: string;
   url?: string;
+  image?: ReturnType<typeof findImage>;
 };
 
-export const certificationsData: Certification[] = [];
+export const certificationsData: Certification[] = [
+  {
+    title: 'Certificate of Participation',
+    issuer: 'NxtWave & CCBP 4.0 Academy',
+    year: '2023',
+    image: findImage('certificate-1'),
+  }
+];
 
 export const skillsData = [
     {

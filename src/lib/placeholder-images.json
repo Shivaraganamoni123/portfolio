@@ -53,6 +53,12 @@
       "description": "Detailed view of project 4",
       "imageUrl": "https://images.unsplash.com/photo-1587355760421-b9de3226a046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1c2VyJTIwZXhwZXJpZW5jZXxlbnwwfHx8fDE3NTg4NjU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "user experience"
+    },
+    {
+      "id": "certificate-1",
+      "description": "Certificate of Participation from NxtWave",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/firebase-studio-users.appspot.com/o/user-assets%2FAdd-this-certificate-image-place-in-certification-section-1721838634884.jpeg?alt=media&token=e93f7b2c-2921-4f1b-a517-3b95085e656d",
+      "imageHint": "certificate participation"
     }
   ]
 }
