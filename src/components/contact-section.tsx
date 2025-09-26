@@ -30,8 +30,19 @@ function SubmitButton() {
   );
 }
 
+function CommentSubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <Button type="submit" disabled={pending} className="w-full">
+      {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <MessageSquare className="mr-2 h-4 w-4" />}
+      Post Comment
+    </Button>
+  );
+}
+
 function Comments() {
   const [comments, setComments] = useState<Awaited<ReturnType<typeof getComments>>>([]);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     getComments().then(setComments);
@@ -44,7 +55,7 @@ function Comments() {
     const name = formData.get('name') as string;
     const message = formData.get('message') as string;
     setComments(prev => [...prev, { name, message, avatarUrl: `https://i.pravatar.cc/40?u=${Math.random()}` }]);
-    (document.getElementById('comment-form') as HTMLFormElement)?.reset();
+    formRef.current?.reset();
   }
 
   return (
@@ -53,7 +64,7 @@ function Comments() {
         <CardTitle className="flex items-center gap-2"><MessageCircle /> Comments</CardTitle>
       </CardHeader>
       <CardContent>
-        <form id="comment-form" action={action} className="space-y-4 mb-6">
+        <form ref={formRef} id="comment-form" action={action} className="space-y-4 mb-6">
             <div className='space-y-2'>
                 <Label htmlFor='comment-name'>Name *</Label>
                 <Input id='comment-name' name='name' placeholder='Enter your name' required />
@@ -61,7 +72,6 @@ function Comments() {
              <div className='space-y-2'>
                 <Label htmlFor='comment-message'>Message *</Label>
                 <Textarea id='comment-message' name='message' placeholder='Write your message here...' required rows={3} />
-                <p className='text-xs text-muted-foreground'>Press Ctrl+Enter (Cmd+Enter on Mac) to submit</p>
             </div>
             <div className='space-y-2'>
                 <Label htmlFor='comment-photo'>Profile Photo (optional)</Label>
@@ -73,6 +83,7 @@ function Comments() {
                 <input id="photo-upload" name="photo" type="file" className="sr-only" />
                 <p className='text-xs text-muted-foreground'>Max file size: 5MB</p>
             </div>
+            <CommentSubmitButton />
         </form>
         <ScrollArea className="h-48 pr-4">
           <div className="space-y-4">
