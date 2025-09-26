@@ -17,7 +17,7 @@ export function CertificationsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certificationsData.map((cert) => (
-            <Card key={cert.title} className="glass-card flex flex-col overflow-hidden">
+            <Card key={cert.id} className="glass-card flex flex-col overflow-hidden">
               {cert.image && (
                  <div className="relative aspect-video w-full overflow-hidden">
                     <Image 

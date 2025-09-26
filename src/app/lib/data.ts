@@ -83,6 +83,7 @@ export const projectsData: Project[] = [
 
 
 export type Certification = {
+  id: string;
   title: string;
   issuer: string;
   year: string;
@@ -92,31 +93,36 @@ export type Certification = {
 
 export const certificationsData: Certification[] = [
   {
-    title: 'Certificate of Completion',
+    id: 'cert-1',
+    title: 'Nxtwave CCBP 4.0 Certificate',
     issuer: '',
     year: '',
     image: findImage('certificate-1'),
   },
   {
-    title: 'Certificate of Completion',
+    id: 'cert-2',
+    title: 'Infosys Springboard Completion',
     issuer: '',
     year: '',
     image: findImage('certificate-2'),
   },
   {
-    title: 'Certificate of Completion',
+    id: 'cert-3',
+    title: 'J-Spiders Certification',
     issuer: '',
     year: '',
     image: findImage('certificate-3'),
   },
   {
-    title: 'Certificate of Completion',
+    id: 'cert-4',
+    title: 'AI-ML Internship Certificate',
     issuer: '',
     year: '',
     image: findImage('certificate-4'),
   },
   {
-    title: 'Certificate of Completion',
+    id: 'cert-5',
+    title: 'Smart Internz Completion',
     issuer: '',
     year: '',
     image: findImage('certificate-5'),
