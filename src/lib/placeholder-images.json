@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile",
+      "description": "A portrait of the portfolio owner",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3ODg5NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Abstract representation of project 1",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzU4ODEwNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "project-2",
+      "description": "Abstract representation of project 2",
+      "imageUrl": "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2RlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzU4ODEzNTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code abstract"
+    },
+    {
+      "id": "project-3",
+      "description": "Abstract representation of project 3",
+      "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NTg4MDc0NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "project-4",
+      "description": "Abstract representation of project 4",
+      "imageUrl": "https://images.unsplash.com/photo-1720962158915-34d95b9b5072?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMHVpfGVufDB8fHx8MTc1ODc2MDM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic ui"
+    },
+    {
+      "id": "project-detail-1",
+      "description": "Detailed view of project 1",
+      "imageUrl": "https://images.unsplash.com/photo-1720962158858-5fb16991d2b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW50ZXJmYWNlfGVufDB8fHx8MTc1ODg2NTk1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology interface"
+    },
+    {
+      "id": "project-detail-2",
+      "description": "Detailed view of project 2",
+      "imageUrl": "https://images.unsplash.com/photo-1645439701553-ba4e94509f16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3lzdGVtJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc1ODg2NTk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "system architecture"
+    },
+    {
+      "id": "project-detail-3",
+      "description": "Detailed view of project 3",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8fHwxNzU4ODA3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "project-detail-4",
+      "description": "Detailed view of project 4",
+      "imageUrl": "https://images.unsplash.com/photo-1587355760421-b9de3226a046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1c2VyJTIwZXhwZXJpZW5jZXxlbnwwfHx8fDE3NTg4NjU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "user experience"
+    }
+  ]
 }
