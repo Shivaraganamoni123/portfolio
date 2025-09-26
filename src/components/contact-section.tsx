@@ -47,7 +47,7 @@ export function ContactSection() {
   }, [state, toast]);
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-secondary">
+    <section id="contact" className="py-16 md:py-24 bg-transparent">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
@@ -58,7 +58,7 @@ export function ContactSection() {
               <a href={`mailto:${profileData.email}`} className="text-primary hover:underline">{profileData.email}</a>.
             </p>
           </div>
-          <Card>
+          <Card className="glass-card">
             <CardHeader>
               <CardTitle>Contact Me</CardTitle>
               <CardDescription>Fill out the form below to send me a message.</CardDescription>

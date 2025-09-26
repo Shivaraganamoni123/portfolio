@@ -63,7 +63,7 @@ export function AIProjectDescriptionGenerator({ project }: AIProjectDescriptionG
   };
 
   return (
-    <Card className="bg-secondary/50 border-dashed">
+    <Card className="glass-card border-dashed">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Sparkles className="text-accent" />
