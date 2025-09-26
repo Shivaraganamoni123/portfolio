@@ -1,4 +1,6 @@
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Github, Instagram, Linkedin } from "lucide-react";
+import { DiscordIcon, LeetCodeIcon } from "@/components/icons";
 
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -8,10 +10,46 @@ export const profileData = {
   bio: `I'm a passionate developer with a knack for creating beautiful, functional, and user-centered digital experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality to deliver products that are not only visually stunning but also intuitive and performant. I'm always eager to learn new technologies and take on challenging projects.`,
   email: 'hello@alexdoe.com',
   socials: {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
+    github: 'https://github.com/Jeston10',
+    linkedin: 'https://www.linkedin.com/in/shiva-shankar-raganamoni-3a799a232/',
     twitter: 'https://twitter.com',
+    instagram: 'https://www.instagram.com/_just_shut_d.../',
+    discord: 'https://discord.com/users/justino8_301...',
+    leetcode: 'https://leetcode.com/u/Justin_zzz_go/',
   },
+  connect: [
+    {
+      name: 'LinkedIn',
+      username: `Let's Connect`,
+      url: 'https://www.linkedin.com/in/shiva-shankar-raganamoni-3a799a232/',
+      icon: Linkedin,
+      main: true,
+    },
+    {
+      name: 'Instagram',
+      username: '@_just_shut_d...',
+      url: 'https://www.instagram.com/_just_shut_d.../',
+      icon: Instagram,
+    },
+    {
+      name: 'Discord',
+      username: '@justino8_301...',
+      url: 'https://discord.com/users/justino8_301...',
+      icon: DiscordIcon,
+    },
+    {
+      name: 'Github',
+      username: '@Jeston10',
+      url: 'https://github.com/Jeston10',
+      icon: Github,
+    },
+    {
+      name: 'LeetCode',
+      username: '@Justin_zzz_go',
+      url: 'https://leetcode.com/u/Justin_zzz_go/',
+      icon: LeetCodeIcon,
+    },
+  ],
   profilePicture: findImage('profile'),
 };
 
