@@ -3,7 +3,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export const profileData = {
-  name: 'Alex Doe',
+  name: 'Raganamoni Shiva Shankar',
   tagline: 'Creative Developer & UI/UX Designer',
   bio: `I'm a passionate developer with a knack for creating beautiful, functional, and user-centered digital experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality to deliver products that are not only visually stunning but also intuitive and performant. I'm always eager to learn new technologies and take on challenging projects.`,
   email: 'hello@alexdoe.com',
