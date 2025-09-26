@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState } from 'react';
+import { useActionState, useTransition } from 'react';
 import { useFormStatus } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
@@ -124,7 +124,6 @@ export function ContactSection() {
   const [state, formAction] = useActionState(submitContactForm, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
-  const [fileName, setFileName] = useState('');
 
   useEffect(() => {
     if (state.message) {
@@ -140,18 +139,9 @@ export function ContactSection() {
           description: state.message,
         });
         formRef.current?.reset();
-        setFileName('');
       }
     }
   }, [state, toast]);
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setFileName(e.target.files[0].name);
-    } else {
-      setFileName('');
-    }
-  };
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-transparent">
@@ -181,17 +171,6 @@ export function ContactSection() {
                   <MessageSquare className="absolute left-3 top-3 text-muted-foreground" />
                   <Textarea id="message" name="message" placeholder="Your Message" rows={5} aria-required="true" className="pl-10 pt-2" />
                   {state.errors?.message && <p className="text-sm text-destructive mt-1">{state.errors.message[0]}</p>}
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="resume">Resume (Optional)</Label>
-                  <Button variant="outline" className="w-full justify-start text-left font-normal" asChild>
-                      <label htmlFor="resume-upload" className="cursor-pointer">
-                          <FileText className="mr-2" />
-                          {fileName || 'Upload Resume'}
-                      </label>
-                  </Button>
-                  <input id="resume-upload" name="resume" type="file" className="sr-only" onChange={handleFileChange} accept=".pdf,.doc,.docx" />
-                  <p className='text-xs text-muted-foreground'>PDF, DOC, DOCX up to 5MB.</p>
                 </div>
                 <SubmitButton />
               </form>
