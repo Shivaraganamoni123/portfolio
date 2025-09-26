@@ -5,9 +5,9 @@ import { DiscordIcon, LeetCodeIcon } from "@/components/icons";
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export const profileData = {
-  name: 'Raganamoni Shiva Shankar',
+  name: 'R. Shiva Shankar',
   tagline: 'Creative Developer & UI/UX Designer',
-  bio: `I'm a passionate developer with a knack for creating beautiful, functional, and user-centered digital experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality to deliver products that are not only visually stunning but also intuitive and performant. I'm always eager to learn new technologies and take on challenging projects.`,
+  bio: `Hey Guys !!! Myself R.Shiva Shankar a 4th year ECE student at SICET-TS, specializing in MERN Fullstack. Envisioning to combine AI/ML, and AI to build smart and secure tech solutions. Learning, Building Projects, and Exploring new ideas. Open for any Opportunities and Collaborations for a combined greater good in future.`,
   email: 'hello@alexdoe.com',
   socials: {
     github: 'https://github.com/Shivaraganamoni123',
