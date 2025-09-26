@@ -66,13 +66,12 @@ export function HeroSection() {
             className="relative hidden md:flex justify-center items-center"
             variants={imageVariants}
           >
-            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden shadow-2xl profile-glow">
+            <div className="relative w-[500px] h-[300px] rounded-lg overflow-hidden shadow-2xl profile-glow">
               <Image
-                src="https://res.cloudinary.com/dtitgjfbk/image/upload/v1758881098/pro_mf8nuo.jpg"
-                alt="R. Shiva Shankar"
+                src="https://res.cloudinary.com/dtitgjfbk/image/upload/v1758881845/Screenshot_2025-09-26_031420_ake0k1.png"
+                alt="Code screenshot"
                 layout="fill"
                 objectFit="cover"
-                className="transform scale-125"
               />
             </div>
           </motion.div>
