@@ -47,11 +47,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-            <Button asChild>
-                <Link href="#contact">Hire Me</Link>
-            </Button>
-        </div>
       </div>
     </header>
   );
