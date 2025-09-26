@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="glass-card overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_hsl(var(--primary)/0.7)]">
+    <Card className="glass-card overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_hsl(var(--primary)/0.7)] hover:border-primary">
       <Link href={`/projects/${project.id}`}>
         <div className="relative aspect-video">
           {project.image && (

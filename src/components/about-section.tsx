@@ -35,7 +35,7 @@ export function AboutSection() {
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
           <motion.div className="md:col-span-1 flex justify-center" variants={imageVariants}>
             {profileData.profilePicture && (
-              <Card className="rounded-full overflow-hidden w-48 h-48 md:w-64 md:h-64 border-4 border-primary/20 shadow-lg bg-card/60 backdrop-blur-lg">
+              <Card className="rounded-full overflow-hidden w-48 h-48 md:w-64 md:h-64 shadow-lg bg-card/60 backdrop-blur-lg ring-2 ring-primary/50 hover:ring-primary transition-shadow duration-300 ease-in-out shadow-primary/20 hover:shadow-primary/40">
                 <Image
                   src={profileData.profilePicture.imageUrl}
                   alt={profileData.profilePicture.description}
@@ -49,7 +49,7 @@ export function AboutSection() {
             )}
           </motion.div>
           <motion.div className="md:col-span-2 space-y-4" variants={textVariants}>
-            <h2 className="text-3xl font-bold font-headline">About Me</h2>
+            <h2 className="text-3xl font-bold font-headline gradient-text">About Me</h2>
             <p className="text-muted-foreground leading-relaxed">
               {profileData.bio}
             </p>

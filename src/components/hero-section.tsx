@@ -8,7 +8,7 @@ export function HeroSection() {
     <section id="home" className="relative h-[calc(100vh-4rem)] min-h-[500px] flex items-center justify-center text-center">
       <div className="container mx-auto max-w-4xl px-4 md:px-6">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline gradient-text">
             {profileData.name}
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">
