@@ -119,31 +119,7 @@ export type Certification = {
   url?: string;
 };
 
-export const certificationsData: Certification[] = [
-  {
-    title: 'Google Certified Professional Cloud Architect',
-    issuer: 'Google Cloud',
-    year: '2023',
-    url: '#',
-  },
-  {
-    title: 'Certified Kubernetes Administrator (CKA)',
-    issuer: 'The Linux Foundation',
-    year: '2022',
-    url: '#',
-  },
-  {
-    title: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'Amazon Web Services',
-    year: '2022',
-  },
-   {
-    title: 'Microsoft Certified: Azure Developer Associate',
-    issuer: 'Microsoft',
-    year: '2021',
-    url: '#',
-  },
-];
+export const certificationsData: Certification[] = [];
 
 export const skillsData = [
     {
