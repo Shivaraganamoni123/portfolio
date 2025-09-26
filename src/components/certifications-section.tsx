@@ -31,10 +31,7 @@ export function CertificationsSection() {
               )}
               <div className="p-6 flex flex-col flex-grow">
                   <CardTitle className="text-xl">{cert.title}</CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    {cert.issuer} &bull; {cert.year}
-                  </CardDescription>
-
+                  
                   <div className="flex-grow flex items-end justify-end mt-4">
                     {cert.url && (
                       <Button asChild variant="link">
