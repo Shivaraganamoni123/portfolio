@@ -10,7 +10,7 @@ export const profileData = {
   bio: `I'm a passionate developer with a knack for creating beautiful, functional, and user-centered digital experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality to deliver products that are not only visually stunning but also intuitive and performant. I'm always eager to learn new technologies and take on challenging projects.`,
   email: 'hello@alexdoe.com',
   socials: {
-    github: 'https://github.com/Jeston10',
+    github: 'https://github.com/Shivaraganamoni123',
     linkedin: 'https://www.linkedin.com/in/raganamoni-shiva-shankar-27201925b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYk7rasvxRkO8dt5tlSWwuw%3D%3D',
     twitter: 'https://twitter.com',
     instagram: 'https://www.instagram.com/shiva_raganamoni/',
@@ -39,8 +39,8 @@ export const profileData = {
     },
     {
       name: 'Github',
-      username: '@Jeston10',
-      url: 'https://github.com/Jeston10',
+      username: '@Shivaraganamoni123',
+      url: 'https://github.com/Shivaraganamoni123',
       icon: Github,
     },
     {
