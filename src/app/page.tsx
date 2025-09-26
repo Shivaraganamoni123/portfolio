@@ -1,3 +1,5 @@
+'use client';
+
 import { Header } from '@/components/header';
 import { HeroSection } from '@/components/hero-section';
 import { AboutSection } from '@/components/about-section';
@@ -5,8 +7,16 @@ import { PortfolioShowcaseSection } from '@/components/portfolio-showcase-sectio
 import { ConnectSection } from '@/components/connect-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
+import { PreLoader } from '@/components/pre-loader';
+import { usePreloader } from '@/hooks/use-preloader';
 
 export default function Home() {
+  const isLoading = usePreloader();
+  
+  if(isLoading) {
+    return <PreLoader />;
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />

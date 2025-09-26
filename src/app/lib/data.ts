@@ -8,7 +8,7 @@ export const profileData = {
   name: 'R. Shiva Shankar',
   tagline: 'Creative Developer & UI/UX Designer',
   bio: `Hey Guys !!! Myself R.Shiva Shankar a 4th year ECE student at SICET-TS, specializing in MERN Fullstack. Envisioning to combine AI/ML, and AI to build smart and secure tech solutions. Learning, Building Projects, and Exploring new ideas. Open for any Opportunities and Collaborations for a combined greater good in future.`,
-  email: 'hello@alexdoe.com',
+  email: 'raganamonishivashankar78@gmail.com',
   socials: {
     github: 'https://github.com/Shivaraganamoni123',
     linkedin: 'https://www.linkedin.com/in/raganamoni-shiva-shankar-27201925b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYk7rasvxRkO8dt5tlSWwuw%3D%3D',
